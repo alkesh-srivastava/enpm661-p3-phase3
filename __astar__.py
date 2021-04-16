@@ -86,7 +86,6 @@ def a_star(maze, start, goal, rpm_1, rpm_2):
                 f_value = new_cost + heuristic(goal, neighbour)
                 pq.put(neighbour, f_value)
                 predecessors[neighbour] = current_cell
-                print("Visited Node:", current_cell)
 
     return None
 # A -star co-ordinate of the next
@@ -138,7 +137,6 @@ def a_star_explore(maze, start, goal, rpm_1, rpm_2):
                 f_value = new_cost + heuristic(goal, neighbour)
                 pq.put(neighbour, f_value)
                 predecessors[neighbour] = current_cell
-                print("Visited Node:", current_cell)
                 explored_list.append(neighbour)
 
     return None
