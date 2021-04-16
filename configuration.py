@@ -7,10 +7,11 @@ dt = 0.1
 
 
 def offsets_determination(left_rpm, right_rpm, theta):
-    theta += (RADIUS / LENGTH) * (right_rpm -left_rpm)
+    theta += (RADIUS / LENGTH) * (right_rpm - left_rpm)
     delta_x = (RADIUS / 2) * (right_rpm + left_rpm) * math.cos(theta)
     delta_y = (RADIUS / 2) * (right_rpm + left_rpm) * math.sin(theta)
     return (delta_x, delta_y, theta, left_rpm, right_rpm)
+
 
 def obstacle(x, y):  # This function definition inspects whether a coordinate point x
     # and y lie on the obstacle or not
@@ -21,9 +22,9 @@ def obstacle(x, y):  # This function definition inspects whether a coordinate po
     inside_C3 = False
     clearance = 0
 
-    if ((x - 2) ** 2 + (y - 2) ** 2) <= ((1+clearance) ** 2):
+    if ((x - 2) ** 2 + (y - 2) ** 2) <= ((1 + clearance) ** 2):
         inside_circle1 = True
-    if ((x - 2) ** 2 + (y - 8) ** 2) <= ((1+clearance) ** 2):
+    if ((x - 2) ** 2 + (y - 8) ** 2) <= ((1 + clearance) ** 2):
         inside_circle2 = True
 
     if 0.25 - clearance < x < 1.75 + clearance and 4.25 - clearance < y < 5.75 + clearance:
@@ -45,7 +46,7 @@ def obstacle(x, y):  # This function definition inspects whether a coordinate po
 # in a list, but I guess they will never be used
 
 def move_possible(maze, pos):
-    i, j, k= pos
+    i, j, k, l, m = pos
     num_rows = len(maze)
     num_cols = len(maze[0])
     return 0 <= i < num_cols and 0 <= j < num_rows and not (obstacle(i, j))
