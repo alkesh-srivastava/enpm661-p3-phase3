@@ -3,7 +3,7 @@ print("Note: Value of \u03F4 should only be in degrees (\N{DEGREE SIGN})\n"
       "Please Enter the starting co-ordinates of the robot and its orientation as (x,y,\u03F4):")
 starting_coordinates = input()
 start = starting_coordinates.split(',')
-start = (int(start[0]), int(start[1]), int(start[2]))
+start = (int(start[0]), int(start[1]), int(start[2]),0,0)
 print("Please Enter the goal co-ordinates of the robot and its orientation as (goal_x,goal_y):")
 goal_coordinates = input()
 goal = goal_coordinates.split(',')
