@@ -1,4 +1,4 @@
-from __astar__ import a_star
+from __astar__ import a_star, a_star_explore
 print("Note: Value of \u03F4 should only be in degrees (\N{DEGREE SIGN})\n"
       "Please Enter the starting co-ordinates of the robot and its orientation as (x,y,\u03F4):")
 starting_coordinates = input()
@@ -19,4 +19,7 @@ clearance = int(clearance)
 puzzle = [[''] * 10] * 10
 # start, goal, rpm_1, rpm_2
 sol = a_star(puzzle, start, (goal[0], goal[1],0), rpm[0], rpm[1])
-print(sol)
+explored = a_star(puzzle, start, (goal[0], goal[1],0), rpm[0], rpm[1])
+
+print("Optimal Path: \n",sol)
+print("Explored Path: \n",explored)
