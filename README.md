@@ -10,7 +10,7 @@ Project 3 aimed to introducing the implementation of search algorithms in a *Mob
 * pygame	2.0.1
 
 In phase 2 we implemented A* algorithm for a mobile robot that was constrained to move only in 5 directions. In this phase, we are looking forward for a more physical implementation of our robot and therefore we will be using Gazebo simulation platform in which our mobile robot will be a TurtleBot that will explore this map:
-![Input](https://github.com/alkesh-umd/enpm661-p3-phase3/blob/main/images/image3.png)
+![Input](https://github.com/alkesh-umd/enpm661-p3-phase3/blob/main/images/image6.png)
 
 In the root folder you will notice that there are multiple files and directories but to normally look at how A* is working in the environment shown above run`__main__.py`
 As soon as you will run this program, you will be asked to input the *starting co-ordinates of the robot as well as its orientation in the environment*. Please ensure that you are entering the co-ordinates separated by commas as is shown in the image below:
