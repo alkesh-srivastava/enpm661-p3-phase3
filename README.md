@@ -36,6 +36,31 @@ Here are few examples of exploration that our mobile robot is successfully able 
 3. From (0,0) to (9,9): <br/>
 ![Maze 3](https://github.com/alkesh-umd/enpm661-p3-phase3/blob/main/images/gif_00_99.gif)
 
+<br/>
+For simulation in Gazebo environment there are two small caveats: <br/>
+1. You need to unzip the zip file `project3sim.zip` in your catkin workspace.
+2. Due to computational cost in my machine, my machine ran out of memory and it is preferred to copy and paste the path obtained from `__main__.py` to `example_path` variable in `c_l_control.py` in `src` directory.
+<br/>
+After you are done extracting the zip file in your catkin workspace you are required to initialize `ros` and source `setup.bash` file. In `mainlaunch.launch ` file you are also expected to manually input the initial position. The manual input is expected from the user to avoid the machine to run out of memory and have a smooth simulation.<br/>
+
+Once initialized, launch the gazebo environment using :<br/>
+`roslaunch project3sim mainlaunch.launch`<br/>
+Once the gazebo environment is up and running, open a new tab in the terminal and source the `setup.bash` file again. To control the turtulebot you need to run the `c_l_control.py` file by :<br/>
+`rosrun project3sim c_l_control.py`<br/>
+
+**PLEASE MAKE SURE THE `example_path` VARIABLE IS ASSIGNED ACCORDING TO YOUR DESIRED PATH.**
+
+Once you hit enter the simulation will start running. Here are two examples:
+1. (6,8) to (9,9): <br/>
+![Simulation 1](https://github.com/alkesh-umd/enpm661-p3-phase3/blob/main/images/gif_68_99.gif)
+2. (8,5) to (7,7): <br/>
+![Simulation 2](https://github.com/alkesh-umd/enpm661-p3-phase3/blob/main/images/gif_85_77.gif)
+
+You can also find the video to these here:
+1. A-star implementation visualization - <a href="https://drive.google.com/drive/folders/1sbmTwOJ36AwGbg8H5j5u-pVb9FJLhlR3?usp=sharing">Click Here</a>
+2. Gazebo Simulation - <a href="https://drive.google.com/drive/folders/1EhwUw2N970HGsC35S_rbuF5UhZQsSRcZ?usp=sharing">Click Here</a>
+
+
 In case you encounter any difficulty please feel free to contact the creators - <br/>
 ***Alkesh K Srivastava*** - `{alkesh@umd.edu}`, University of Maryland, College Park <br/>
 ***Hari Krishna Prannoy Namala*** - `{pnamala@umd.edu}`, University of Maryland, College Park <br/>
