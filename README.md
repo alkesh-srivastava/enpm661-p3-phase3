@@ -37,7 +37,7 @@ Here are few examples of exploration that our mobile robot is successfully able 
 ![Maze 3](https://github.com/alkesh-umd/enpm661-p3-phase3/blob/main/images/gif_00_99.gif)
 
 <br/>
-For simulation in Gazebo environment there are two small caveats: <br/><br/>
+For simulation in Gazebo environment there are two small caveats: <br/>
 1. You need to unzip the zip file `project3sim.zip` in your catkin workspace.<br/>
 2. Due to computational cost in my machine, my machine ran out of memory and it is preferred to copy and paste the path obtained from `__main__.py` to `example_path` variable in `c_l_control.py` in `src` directory.
 <br/>
