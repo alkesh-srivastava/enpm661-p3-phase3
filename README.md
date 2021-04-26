@@ -37,10 +37,9 @@ Here are few examples of exploration that our mobile robot is successfully able 
 ![Maze 3](https://github.com/alkesh-umd/enpm661-p3-phase3/blob/main/images/gif_00_99.gif)
 
 <br/>
-For simulation in Gazebo environment there are two small caveats: <br/>
-1. You need to unzip the zip file `project3sim.zip` in your catkin workspace.<br/>
-2. Due to computational cost in my machine, my machine ran out of memory and it is preferred to copy and paste the path obtained from `__main__.py` to `example_path` variable in `c_l_control.py` in `src` directory.
-<br/>
+For simulation in Gazebo environment there are two small caveats:<br/>
+1.  You need to unzip the file *project3sim.zip* in your catkin workspace. <br/><br/>
+2.  Due to computational cost, my machine ran out of memory and it is preferred to copy and paste the path obtained from *__main__.py* to *example_path* variable in *c_l_control.py* file in *src* directory.<br/>
 After you are done extracting the zip file in your catkin workspace you are required to initialize `ros` and source `setup.bash` file. In `mainlaunch.launch ` file you are also expected to manually input the initial position. The manual input is expected from the user to avoid the machine to run out of memory and have a smooth simulation.<br/>
 
 Once initialized, launch the gazebo environment using :<br/>
