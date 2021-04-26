@@ -41,15 +41,17 @@ For simulation in Gazebo environment there are two small caveats:<br/>
 1.  You need to unzip the file <i>project3sim.zip</i> in your catkin workspace. <br/>
 2.  Due to computational cost, my machine ran out of memory and it is preferred to copy and paste the path obtained from <i>__main__.py</i> to <i>example_path</i> variable in <i>c_l_control.py</i> file in <i>src</i> directory.<br/>
 
-
+<br/>
 After you are done extracting the zip file in your catkin workspace you are required to initialize `ros` and source `setup.bash` file. In `mainlaunch.launch ` file you are also expected to manually input the initial position. The manual input is expected from the user to avoid the machine to run out of memory and have a smooth simulation.<br/>
 
 Once initialized, launch the gazebo environment using :<br/>
 `roslaunch project3sim mainlaunch.launch`<br/>
 Once the gazebo environment is up and running, open a new tab in the terminal and source the `setup.bash` file again. To control the turtulebot you need to run the `c_l_control.py` file by :<br/>
 `rosrun project3sim c_l_control.py`<br/>
-
 **PLEASE MAKE SURE THE `example_path` VARIABLE IS ASSIGNED ACCORDING TO YOUR DESIRED PATH.**
+<br/>
+It is worth noting that to avoid unnecessary exploration of the environment we padded the goal location to have a radius of 1 unit, i.e the robot will reach its destination if it is within 1 unit radius of the goal point.
+<br/>
 
 Once you hit enter the simulation will start running. Here are two examples:
 1. (6,8) to (9,9): <br/>
