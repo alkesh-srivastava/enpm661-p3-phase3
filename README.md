@@ -38,8 +38,8 @@ Here are few examples of exploration that our mobile robot is successfully able 
 
 <br/>
 For simulation in Gazebo environment there are two small caveats:<br/>
-1.  You need to unzip the file <i>project3sim.zip<i/> in your catkin workspace. <br/>
-2.  Due to computational cost, my machine ran out of memory and it is preferred to copy and paste the path obtained from <i>__main__.py<i/> to <i>example_path<i> variable in <i>c_l_control.py<i/> file in <i>src<i/> directory.<br/>
+1.  You need to unzip the file <i>project3sim.zip</i> in your catkin workspace. <br/>
+2.  Due to computational cost, my machine ran out of memory and it is preferred to copy and paste the path obtained from <i>__main__.py</i> to <i>example_path<i> variable in <i>c_l_control.py</i> file in <i>src</i> directory.<br/>
 
 
 After you are done extracting the zip file in your catkin workspace you are required to initialize `ros` and source `setup.bash` file. In `mainlaunch.launch ` file you are also expected to manually input the initial position. The manual input is expected from the user to avoid the machine to run out of memory and have a smooth simulation.<br/>
